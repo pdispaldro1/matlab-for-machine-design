@@ -4,8 +4,8 @@ disp ("Questo tool permette di calcolare il valore minimo della durezza Brinell 
 
 n = input ("Inserisci il numero di giri: "); %valore del numero di giri in ingresso
 tau = input ("Inserisci il valore di tau: "); %valore del rapporto di trasmissione dell'accoppiamento
-raggio = input ("Inserisci il valore del raggio: "); %valore del raggio della ruota
-b = input ("Inserisci il valore della larghezza del dente della ruota: "); %valore della larghezza del dente della ruota
+raggio = input ("Inserisci il valore in mm del raggio: "); %valore del raggio della ruota
+b = input ("Inserisci il valore in mm della larghezza del dente della ruota: "); %valore della larghezza del dente della ruota
 omega = n*0.1047; %valore della velocità angolare
 Pt = 1000 * input ("Inserisci il valore della potenza in KW: "); %valore della potenza in ingresso dato dal professore
 E = input ("Inserisci il valore del modulo di Young in MPa: "); %valore del modulo di young dell'acciaio in MPa
