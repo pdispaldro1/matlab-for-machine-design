@@ -2,9 +2,9 @@ function dimensionichiavetta = dimensionamentochiavetta(~)
 
 disp("Questo tool permette di calcolare la lunghezza minima che deve avere la chiavetta da applicare all'interfaccia albero-mozzo")
 
-d = input("Inserisci il valore del diametro dell'albero: "); %valore del diametro dell'albero
+d = input("Inserisci il valore in mm del diametro dell'albero: "); %valore del diametro dell'albero
 r = d/2; %valore del raggio dell'albero inteso come la metà del diametro
-mt = input("Inserisci il valore del momento torcente agente sull'albero in Nm: "); %valore del momento torcente agente sull'albero in Nm
+mt = input("Inserisci il valore in Nmm del momento torcente agente sull'albero in Nm: "); %valore del momento torcente agente sull'albero in Nm
 f = input("Inserisci il valore del coefficiente di attrito all'interfaccia albero-mozzo: "); %valore del coefficiente di attrito all'interfaccia albero mozzo, per interfaccia acciaio-acciaio è pari a 0.15
 tau_amm = input("Inserisci il valore della tau ammissibile in kg/mm^2 agente sull'albero: "); %valore della tau ammissibile in kg/mm^2
 tau = (2*mt*1000)/(9.807*pi*(r^3)) %valore della tensione tangenziale agente sulla chiavetta
