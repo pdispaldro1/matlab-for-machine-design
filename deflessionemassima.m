@@ -1,9 +1,9 @@
 function verifica_max_deflessione = deflessionemassima(~)
 
-alfa_max = input("Inserisci il massimo valore di alfa: "); %valore massimo di alfa che si ricava dalla deformata
-freccia_max_xy = input("Inserisci il valore massimo della freccia sul piano xy: "); %valore massimo della freccia sul piano xy
-freccia_max_xz = input("Inserisci il valore massimo della freccia sul piano xz: "); %valore massimo della freccia sul piano yz
-l = input("Inserisci la lunghezza dell'albero: "); %lunghezza dell'albero che ricavo dal disegno originario in proporzione alla larghezza del dente della ruota
+alfa_max = input("Inserisci il massimo valore di alfa in gradi: "); %valore massimo di alfa che si ricava dalla deformata
+freccia_max_xy = input("Inserisci il valore massimo in mm della freccia sul piano xy: "); %valore massimo della freccia sul piano xy
+freccia_max_xz = input("Inserisci il valore massimo in mm della freccia sul piano xz: "); %valore massimo della freccia sul piano yz
+l = input("Inserisci la lunghezza in mm dell'albero: "); %lunghezza dell'albero che ricavo dal disegno originario in proporzione alla larghezza del dente della ruota
 
 j1=tan(alfa_max) %angolo di deflessione j1
 
