@@ -4,11 +4,11 @@ disp("Questo tool permette di dimensionare i cuscinetti conici")
 
 l10h = input ("Inserisci il valore previsto di ore: "); %valore previsto di ore del cuscinetto
 n = input ("Inserisci il numero di giri dell'albero: "); %valore del numero di giri a cui ruota l'albero
-fa = input ("Inserisci il valore della forza assiale agente sull'albero: "); %valore della forza assiale agente sull'albero
-vxy1 = input ("Inserisci il valore della reazione vxy agente sul piano xy del primo cuscinetto: "); %valore della reazione vxy agente sul piano xy del primo cuscinetto
-vyz1 = input ("Inserisci il valore della reazione vyz agente sul piano yz del primo cuscinetto: ");%valore della reazione vxy agente sul piano yz del primo cuscinetto
-vxy2 = input ("Inserisci il valore della reazione vxy agente sul piano xy del secondo cuscinetto: "); %valore della reazione vxy agente sul piano xy del secondo cuscinetto
-vyz2 = input ("Inserisci il valore della reazione vyz agente sul piano yz del secondo cuscinetto: ");%valore della reazione vxy agente sul piano yz del secondo cuscinetto
+fa = input ("Inserisci il valore in N della forza assiale agente sull'albero: "); %valore della forza assiale agente sull'albero
+vxy1 = input ("Inserisci il valore in N della reazione vxy agente sul piano xy del primo cuscinetto: "); %valore della reazione vxy agente sul piano xy del primo cuscinetto
+vyz1 = input ("Inserisci il valore in N della reazione vyz agente sul piano yz del primo cuscinetto: ");%valore della reazione vxy agente sul piano yz del primo cuscinetto
+vxy2 = input ("Inserisci il valore in N della reazione vxy agente sul piano xy del secondo cuscinetto: "); %valore della reazione vxy agente sul piano xy del secondo cuscinetto
+vyz2 = input ("Inserisci il valore in N della reazione vyz agente sul piano yz del secondo cuscinetto: ");%valore della reazione vxy agente sul piano yz del secondo cuscinetto
 
 fr1 = sqrt((vxy1^2)+(vyz1^2)) %valore della forza radiale agente sul cuscinetto 1
 fr2 = sqrt((vxy2^2)+(vyz2^2)) %valore della forza radiale agente sul cuscinetto 2
