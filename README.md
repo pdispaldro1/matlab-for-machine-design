@@ -1,4 +1,4 @@
-# matlab-for-machine-design
+# matlab-functions-for-machine-design
 
 ------------------------------------------------------------------------------
 
