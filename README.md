@@ -14,17 +14,22 @@ At the moment the italian version of the matlab functions is available, in next 
 
 -------------------------------------------------------------------------------
 
-IT - Funzioni presenti
+IT - Funzioni presenti (in parentesi è riportato il nome del file)
 
-1) Calcolo numero dei denti della ruota condotta a partire dal modulo di trasmissione
-2) Dimensionamento di una ruota dentata cilindrica
-3) Dimensionamento di una ruota dentata conica
-4) Dimensionamento secondo la teoria dell'usura di Hertz
-5) Calcolatore numero di giri 
-6) Verifiche cinematiche a flessotorsione e deflessione massima
-7) Verifica a fatica (con pubblicazione del diagramma semplificato di Haigh)
-8) Dimensionamento cuscinetti conici e radiali a sfera
-9) Dimensionamento collegamenti albero-mozzo (forzamento, chiavetta, linguetta)
-10) Calcolo e verifica di collegamenti bullonati con e senza coppia con verifica del rifollamento della lamiera
+1) Calcolo numero dei denti della ruota condotta a partire dal modulo di trasmissione (dimensionamentodentiruota.m)
+2) Dimensionamento di una ruota dentata cilindrica (calcoloruotacilindrica.m)
+3) Dimensionamento di una ruota dentata conica (calcoloruotaconica.m)
+4) Dimensionamento secondo la teoria dell'usura di Hertz (hertz.m)
+5) Calcolatore numero di giri (calcologiri.m)
+6) Verifiche cinematiche a flessotorsione (dimensionamentosenzafatica.m)
+7) Verifiche cinematiche a deflessione massima (deflessionemassima.m)
+8) Verifica a fatica (con plottaggio del diagramma semplificato di Haigh) (calcolofatica.m)
+9) Dimensionamento cuscinetti conici (dimensionamentocuscinetticonici.m)
+10) Dimensionamento cuscinetti radiali a sfera (dimensionamentocuscinettiasferaradiali.m)
+11) Dimensionamento forzamento (dimensionamentoforzamento.m)
+12) Dimensionamento linguetta (dimensionamentolinguetta.m)
+13) Dimensionamento chiavetta (dimensionamentochiavetta.m)
+14) Calcolo e verifica di collegamenti bullonati con coppia (verificabulloniconcoppia.m)
+15) Calcolo e verifica di collegamenti bullonati senza coppia (verificasenzacoppia.m)
 
 -------------------------------------------------------------------------------
