@@ -5,10 +5,10 @@ n = input ("Inserisci il numero di sezioni che compongono l'albero: ");
 valori_sigma = []; %vettore vuoto che comprenderà in seguito tutti i valori delle sigma per ogni sezione
 
 for iteration = 1:n
-    mxy = input ("Inserisci il valore di Mxy: "); %momento flettente agente su piano xy
-    myz = input ("Inserisci il valore di Myz: "); %momento flettente agente su piano yz
-    mt = input ("Inserisci il valore del momento torcente: "); %momento torcente
-    d = input ("Inserisci il valore del diametro della sezione: "); %diametro dello spallamento, tenendo conto che la sezione più grande dell'albero non va considerata
+    mxy = input ("Inserisci il valore di Mxy in Nmm: "); %momento flettente agente su piano xy
+    myz = input ("Inserisci il valore di Myz in Nmm: "); %momento flettente agente su piano yz
+    mt = input ("Inserisci il valore del momento torcente in Nmm: "); %momento torcente
+    d = input ("Inserisci il valore del diametro della sezione in mm: "); %diametro dello spallamento, tenendo conto che la sezione più grande dell'albero non va considerata
     sigma_vm = sqrt((mxy^2)+(myz^2)+(0.75*(mt^2))); %sigma ideale calcolata alla von mises
     sigma_sezione = (32/(pi*d^3))*sigma_vm; %sollecitazione agente su ogni sezione
     valori_sigma = [valori_sigma, sigma_sezione]; %vettore con le sigma per ogni sezione
@@ -18,14 +18,14 @@ valori_sigma %vettore coi sigma per ogni sezione
 
 disp("Mediante questo vettore ordinato da sx verso dx dalla prima all'ultima sezione si può vedere la sezione maggiormente sollecitata")
 
-sigma_adm = input ("Inserisci il valore della sigma ammissibile: "); %valore della sigma ammissibile
+sigma_adm = input ("Inserisci il valore della sigma ammissibile in N/mm^2:"); %valore della sigma ammissibile
 sigma_rottura = 4*sigma_adm; %carico di rottura
 sigma_sn = 0.68*sigma_rottura; %carico di snervamento
 delta_sigma_l = 0.56*sigma_rottura; %resistenza a oscillazione
-Mt_sezione_max = input ("Reinserisci il valore del momento torcente della sezione a massima sollecitazione: "); %momento torcente della sezione a massima sollecitazione
-d_sezione_max = input ("Reinserisci il valore del diametro della sezione a massima sollecitazione: "); %diametro della sezione a massima sollecitazione
-mxy_sezione_max = input ("Reinserisci il valore del momento flettente della sezione a massima sollecitazione sul piano xy: "); %momento flettente sul piano xy della sezione a massima sollecitazione
-myz_sezione_max = input ("Reinserisci il valore del momento flettente della sezione a massima sollecitazione sul piano yz: "); %momento flettente sul piano yz della sezione a massima sollecitazione
+Mt_sezione_max = input ("Reinserisci il valore del momento torcente in Nmm della sezione a massima sollecitazione: "); %momento torcente della sezione a massima sollecitazione
+d_sezione_max = input ("Reinserisci il valore del diametro in mm della sezione a massima sollecitazione: "); %diametro della sezione a massima sollecitazione
+mxy_sezione_max = input ("Reinserisci il valore del momento flettente in Nmm della sezione a massima sollecitazione sul piano xy: "); %momento flettente sul piano xy della sezione a massima sollecitazione
+myz_sezione_max = input ("Reinserisci il valore del momento flettente in Nmm della sezione a massima sollecitazione sul piano yz: "); %momento flettente sul piano yz della sezione a massima sollecitazione
 mfid = sqrt((mxy_sezione_max^2)+(myz_sezione_max^2)); %momento flettente ideale calcolato usando i momenti flettenti sui piani come componenti
 delta_sigma = 0.10196*((32/(pi*d^3))*mfid); %ampiezza dell'oscillazione
 sigma_m = 0.10196*(sqrt(3) * (16*Mt_sezione_max)/(pi*(d_sezione_max^3))); %tensione media
@@ -33,8 +33,8 @@ sigma_m = 0.10196*(sqrt(3) * (16*Mt_sezione_max)/(pi*(d_sezione_max^3))); %tensi
 c1 = input ("Inserisci il valore di C1: "); %valore di c1 da ricavare da grafico
 c2 = input ("Inserisci il valore di C2: "); %valore di c2 da ricavare da grafico
 
-r= input ("Inserisci il valore del raggio di raccordo: "); %valore del raggio di raccordo tra le sezioni, fondamentale per evitare gli effetti di intaglio
-h = input ("Inserisci il valore dell'altezza dello spallamento: "); %valore dell'altezza dello spallamento o della differenza tra i raggi delle sezioni
+r= input ("Inserisci il valore in mm del raggio di raccordo: "); %valore del raggio di raccordo tra le sezioni, fondamentale per evitare gli effetti di intaglio
+h = input ("Inserisci il valore in mm dell'altezza dello spallamento: "); %valore dell'altezza dello spallamento o della differenza tra i raggi delle sezioni
 j = h/r; %rapporto geometrico tra altezza dello spallamento e raggio di raccordo
 k = r/d_sezione_max; % %valore di r/d
 w = (h+d_sezione_max)/(d_sezione_max); %valore di D/d
