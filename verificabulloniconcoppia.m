@@ -11,7 +11,7 @@ rm = input ("Inserisci la distanza in mm dal centro del bullone: "); %valore del
 ft = 9.807*(C/rm) %forza tangenziale agente sul bullone
 disp("Questa è la forza tangenziale agente")
 
-d = input ("Inserisci il valore del diametro del bullone: "); %valore del diametro del bullone
+d = input ("Inserisci il valore in mm del diametro del bullone: "); %valore del diametro del bullone
 fkn = input ("Inserisci il valore tabellato di fkn per il bullone in oggetto: "); %valore tabellato di fkn
 a_res = input ("Inserisci il valore tabellato di ares per la classe scelta: "); %valore di ares per la classe di bulloni scelta
 ns = 0.8*fkn*a_res; %valore della forza di precarico
@@ -38,8 +38,8 @@ fb = f/nbdefinitivo; %valore unitario della forza di distacco agente sul singolo
 forze_singolo_bullone = [ftb;fb] %valori delle forze agenti sul singolo bullone
 disp("Questi sono rispettivamente i valori della forza tangenziale e della forza di distacco agente sul singolo bullone")
 
-sigma_adm = input("Inserisci il valore tabellato della sigma ammissibile: "); %valore tabellato della sigma ammissibile
-tau_adm = input("Inserisci il valore tabellato della tau ammissibile: "); %valore tabellato della tau ammissibile
+sigma_adm = input("Inserisci il valore in N/mm^2 tabellato della sigma ammissibile: "); %valore tabellato della sigma ammissibile
+tau_adm = input("Inserisci il valore tabellato in N/mm^2 della tau ammissibile: "); %valore tabellato della tau ammissibile
 
 r = (((fb/a_res)/sigma_adm)^2)+(((ftb/a_res)/tau_adm)^2); %valore del coefficiente di resistenza
 
@@ -49,9 +49,9 @@ else
     disp("La verifica a resistenza purtroppo NON ha esito positivo")
 end
 
-sigma_adm_lamiera = input("Inserisci il valore della sigma ammissibile per la lamiera: "); %valore della sigma ammissibile per la lamiera
+sigma_adm_lamiera = input("Inserisci il valore in N/mm^2 della sigma ammissibile per la lamiera: "); %valore della sigma ammissibile per la lamiera
 alfa = input("Inserisci il valore del coefficiente alfa: "); %valore del coefficiente di sicurezza alfa
-b = input("Inserisci lo spessore della lamiera: "); %valore dello spessore della lamiera
+b = input("Inserisci lo spessore in mm della lamiera: "); %valore dello spessore della lamiera
 
 f_rif = (ftb)/(b*d) %valore della sollecitazione di rifollamento
 
